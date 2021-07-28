@@ -1,0 +1,30 @@
+#banner-animation {
+    animation: animation 2s ease 0.5s infinite alternate,
+    animation-translate 1s ease;
+}
+
+
+
+@keyframes animation {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(40px);
+    }
+}
+
+@keyframes animation-translate {
+    0% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media(max-width:567px){
+    .feature-content {
+        padding-left: 45px;
+    }
+}
